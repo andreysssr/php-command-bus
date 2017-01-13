@@ -9,6 +9,8 @@
 - Command Handlers enforce Single Responsibility Principle
 - Can be easily extended (decorated)
 
+Read more here [https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6ac](https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6ac)
+
 #### Prerequisites
 
 - PHP >= 7.x
