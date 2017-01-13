@@ -11,41 +11,63 @@
 
 #### Prerequisites
 
-- PHP version >= 7.x
+- PHP >= 7.x
+- Composer
 
-#### Getting started with the Command Bus
+#### Install
+
+```sh
+composer require 0x13a/buxus
+```
+
+#### Getting started
+
+You can simply define your **command -> commandHandler** map and then instantiate your command bus, ready to use.
 
 ```php
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 $commandHandlerMap = [
     CreateProductCommand::class => new CreateProductHandler()
 ];
+
 $standardCommandBus = new \Buxus\Bus\StandardCommandBus(
     new \Buxus\Handler\StandardCommandHandlerLocator(
         new \Buxus\Map\InMemoryCommandHandlerMap($commandHandlerMap)
     )
 );
+
 $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 ```
 
-#### Extending Command Bus funcionality through Decorator
+#### Extending Command Bus
+
+If you want to extend the default Command Bus functionality, you can decorate it, creating a new one based on your needs.
+
+See [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ```php
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 $commandHandlerMap = [
     CreateProductCommand::class => new CreateProductHandler()
 ];
+
 $standardCommandBus = new \Buxus\Bus\StandardCommandBus(
     new \Buxus\Handler\StandardCommandHandlerLocator(
         new \Buxus\Map\InMemoryCommandHandlerMap($commandHandlerMap)
     )
 );
+
 $loggedCommandBus = new LoggedCommandBus(
     $standardCommandBus,
     new Logger()
 );
+
 $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 ```
 
@@ -55,8 +77,8 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 
 - No `NULL` is used
 - `final` classes by default (*Composition over inheritance*)
-- [Object Calisthenics]() compliant
-- [SOLID]() compliant
+- [Object Calisthenics](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
+- [SOLID Principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
 - Immutable data structures
 
 
