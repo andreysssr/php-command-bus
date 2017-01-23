@@ -1,9 +1,9 @@
-## Buxus - A PHP Command Bus
+# Buxus - A PHP Command Bus
 
 [![Build Status](https://travis-ci.org/0x13a/buxus.svg?branch=master)](https://travis-ci.org/0x13a/buxus)
 [![Coverage Status](https://coveralls.io/repos/github/0x13a/buxus/badge.svg?branch=master)](https://coveralls.io/github/0x13a/buxus?branch=master)
 
-### Why a PHP Command Bus
+## Why a PHP Command Bus
 
 - Keeps Application logic separated from Domain logic
 - Commands enforce discoverability
@@ -12,20 +12,20 @@
 
 Read more here [https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6ac](https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6ac)
 
-### Prerequisites
+## Prerequisites
 
 - PHP >= 7.x
 - Composer
 
-### Install
+## Install
 
 ```sh
 composer require 0x13a/buxus
 ```
 
-### Getting started
+## Getting started
 
-You can simply define your **command -> commandHandler** map and then instantiate your command bus, ready to use.
+You can simply define your `Command => CommandHandler` map and then instantiate your command bus, ready to use.
 
 ```php
 <?php
@@ -45,7 +45,7 @@ $standardCommandBus = new \Buxus\Bus\StandardCommandBus(
 $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 ```
 
-### Extending Command Bus
+## Extending Command Bus
 
 If you want to extend the default Command Bus functionality, you can decorate it, creating a new one based on your needs.
 
@@ -76,7 +76,7 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 
 
 
-### In this project
+## In this project
 
 - No `NULL` is used
 - `final` classes by default (*Composition over inheritance*)
@@ -85,7 +85,7 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 - Immutable data structures
 
 
-### License
+## License
 
 Buxus is licensed under the MIT license. See [License File](LICENSE) for more information
 
