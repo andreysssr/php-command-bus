@@ -9,7 +9,7 @@ before_script:
     - php composer.phar install --dev
 
 before_install:
-    - composer require satooshi/php-coveralls
+    - composer require satooshi/php-coveralls --ignore-platform-reqs
     - composer install --ignore-platform-reqs
  
 script:
