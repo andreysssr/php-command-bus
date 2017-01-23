@@ -6,6 +6,9 @@ php:
 
 sudo: false
 
+before_install:
+  - phpenv config-rm xdebug.ini
+
 install:
   - composer install --no-interaction --ignore-platform-reqs
   - wget -c -nc --retry-connrefused --tries=0 https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
