@@ -9,8 +9,8 @@ before_script:
     - php composer.phar install --dev
 
 before_install:
-    - composer require satooshi/php-coveralls:dev-master
-    - composer install --dev
+    - composer require satooshi/php-coveralls
+    - composer install --ignore-platform-reqs
  
 script:
     - ./vendor/bin/phpunit --coverage-clover ./test/logs/clover.xml

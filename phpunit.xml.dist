@@ -10,9 +10,6 @@
         stopOnFailure = "true"
         syntaxCheck = "false"
         bootstrap = "vendor/autoload.php" >
-        <logging>
-            <log type="coverage-clover" target="test/logs/clover.xml"/>
-        </logging>
     <testsuites>
         <testsuite name="Buxus test suite">
             <directory>test</directory>
