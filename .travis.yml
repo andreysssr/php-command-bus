@@ -9,7 +9,7 @@ before_script:
     - php composer.phar install --dev
 
 before_install:
-    - composer require phpunit/phpunit:4.8.* satooshi/php-coveralls:dev-master
+    - composer require satooshi/php-coveralls:dev-master
     - composer install --dev
  
 script:
