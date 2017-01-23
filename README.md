@@ -1,6 +1,7 @@
 ## Buxus - A PHP Command Bus
 
 [![Build Status](https://travis-ci.org/0x13a/buxus.svg?branch=master)](https://travis-ci.org/0x13a/buxus)
+[![Coverage Status](https://coveralls.io/repos/github/0x13a/buxus/badge.svg?branch=master)](https://coveralls.io/github/0x13a/buxus?branch=master)
 
 ### Why a PHP Command Bus
 
