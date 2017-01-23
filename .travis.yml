@@ -8,4 +8,12 @@ before_script:
     - curl -s http://getcomposer.org/installer | php
     - php composer.phar install --dev
 
-script: vendor/bin/phpunit
+before_install:
+    - composer require phpunit/phpunit:4.8.* satooshi/php-coveralls:dev-master
+    - composer install --dev
+ 
+script:
+    - ./vendor/bin/phpunit --coverage-clover ./test/logs/clover.xml
+ 
+after_script:
+    - php vendor/bin/coveralls -v
