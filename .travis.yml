@@ -6,7 +6,7 @@ php:
 
 before_script:
     - curl -s http://getcomposer.org/installer | php
-    - php composer.phar install --dev
+    - php composer.phar install --dev --ignore-platform-reqs
 
 before_install:
     - composer require satooshi/php-coveralls --ignore-platform-reqs
