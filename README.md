@@ -1,8 +1,9 @@
 # Buxus - A PHP Command Bus
 
 [![Build Status](https://travis-ci.org/0x13a/buxus.svg?branch=master)](https://travis-ci.org/0x13a/buxus)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://poser.pugx.org/0x13a/buxus/license)](https://packagist.org/packages/0x13a/buxus)
 [![Coverage Status](https://coveralls.io/repos/github/0x13a/buxus/badge.svg?branch=master)](https://coveralls.io/github/0x13a/buxus?branch=master)
+[![composer.lock](https://poser.pugx.org/0x13a/buxus/composerlock)](https://packagist.org/packages/0x13a/buxus)
 
 ## Why a PHP Command Bus
 
