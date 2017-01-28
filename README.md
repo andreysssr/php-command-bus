@@ -103,8 +103,8 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 - No `NULL` is used
 - `final` classes by default (*Composition over inheritance*)
 - [Object Calisthenics](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
-- [SOLID Principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
-- Immutable data structures
+- [SOLID Principles](https://medium.com/web-engineering-vox/how-to-write-solid-code-that-doesnt-suck-2a3416623d48)
+- [Immutable data structures](https://medium.com/web-engineering-vox/3-benefits-of-using-immutable-objects-886ca2c56e85)
 
 
 ## License
