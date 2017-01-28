@@ -2,4 +2,6 @@
 
 namespace Buxus\Command;
 
-interface Command {}
+interface Command
+{
+}

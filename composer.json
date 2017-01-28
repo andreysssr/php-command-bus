@@ -13,7 +13,9 @@
         "php": ">=7.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7"
+        "phpunit/phpunit": "^5.7",
+        "object-calisthenics/phpcs-calisthenics-rules": "^2.0",
+        "fabpot/php-cs-fixer": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -24,5 +26,12 @@
         "psr-4": {
             "Buxus\\Test\\": "test"
         }
+    },
+    "scripts": {
+        "check-cs": [
+            "vendor/bin/php-cs-fixer fix src --diff --dry-run -v",
+            "vendor/bin/php-cs-fixer fix test --diff --dry-run -v",
+            "vendor/bin/phpcs src --colors -p -s --extensions=php --standard=vendor/object-calisthenics/phpcs-calisthenics-rules/src/ObjectCalisthenics/ruleset.xml"
+        ]
     }
 }
