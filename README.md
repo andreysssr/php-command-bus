@@ -16,8 +16,8 @@ Read more here [https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6a
 
 ## Prerequisites
 
-- PHP >= 7.x
-- Composer
+- PHP >= [7.x](http://php.net/manual/en/migration70.php)
+- [Composer](https://getcomposer.org) - Dependency Manager for PHP
 
 ## Install
 
