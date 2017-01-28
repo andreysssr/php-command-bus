@@ -30,7 +30,9 @@
     "scripts": {
         "check-cs": [
             "vendor/bin/php-cs-fixer fix src --diff --dry-run -v",
-            "vendor/bin/php-cs-fixer fix test --diff --dry-run -v",
+            "vendor/bin/php-cs-fixer fix test --diff --dry-run -v"
+        ],
+        "check-calisthenics": [
             "vendor/bin/phpcs src --colors -p -s --extensions=php --standard=vendor/object-calisthenics/phpcs-calisthenics-rules/src/ObjectCalisthenics/ruleset.xml"
         ]
     }

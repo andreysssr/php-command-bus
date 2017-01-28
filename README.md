@@ -21,8 +21,28 @@ Read more here [https://medium.com/@0x13a/building-a-php-command-bus-a65e6ae6a6a
 
 ## Install
 
+Install using composer
+
 ```sh
 composer require 0x13a/buxus
+```
+
+Run test suite
+
+```sh
+vendor/bin/phpunit
+```
+
+Check code style
+
+```sh
+composer check-cs
+```
+
+Check Object Calisthenics rules
+
+```sh
+composer check-calisthenics
 ```
 
 ## Getting started
