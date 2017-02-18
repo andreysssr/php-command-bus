@@ -100,7 +100,7 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 
 ## In this project
 
-- No `NULL` is used
+- [No `NULL` is used](https://medium.com/web-engineering-vox/why-null-references-are-a-bad-idea-17985942cea)
 - `final` classes by default (*Composition over inheritance*)
 - [Object Calisthenics](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
 - [SOLID Principles](https://medium.com/web-engineering-vox/how-to-write-solid-code-that-doesnt-suck-2a3416623d48)
