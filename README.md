@@ -64,7 +64,7 @@ $standardCommandBus = new \Buxus\Bus\StandardCommandBus(
     )
 );
 
-$loggedCommandBus->dispatch(new CreateProductCommand('beer'));
+$standardCommandBus->dispatch(new CreateProductCommand('beer'));
 ```
 
 ## Extending Command Bus
